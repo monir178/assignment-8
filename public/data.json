@@ -1,51 +1,44 @@
 [
     {
         "id": "6336ef2e3a88b7e4c80f81a3",
-        "time": "$3,539.11",
-        "img": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "age": 33,
-        "name": "Tracie Bryant"
+        "time": 10,
+        "img": "https://musclemagfitness.com/wp-content/uploads/everything-you-want-to-know-about-squats-1024x576.jpg",
+        "age": "20-25",
+        "name": "Weighted Squats"
     },
     {
         "id": "6336ef2e2ab350f05affb939",
-        "time": "$3,397.03",
-        "img": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "age": 31,
-        "name": "Bradshaw Hill"
+        "time": 20,
+        "img": "https://d3h9ln6psucegz.cloudfront.net/wp-content/uploads/2016/12/Lunges-Youre-Doing-Them-Wrong.jpg",
+        "age": "25-30",
+        "name": "Weighted Lunges"
     },
     {
         "id": "6336ef2ede1e9a04246fb7b1",
-        "time": "$3,734.91",
-        "img": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "age": 21,
-        "name": "Compton Nelson"
+        "time": 40,
+        "img": "https://fitnessvolt.com/wp-content/uploads/2021/08/Renegade-Rows-Guide-750x422.jpg",
+        "age": "25-30",
+        "name": "Renegade Rows"
     },
     {
         "id": "6336ef2e40d2069878d1be0b",
-        "time": "$1,631.92",
-        "img": "https://media.istockphoto.com/photos/low-angle-view-of-athletic-man-exercising-with-heavy-barbell-in-gym-picture-id1162094459",
-        "age": 26,
-        "name": "Lancaster Mcfadden"
+        "time": 30,
+        "img": "https://www.dmarge.com/wp-content/uploads/2022/01/how-to-bench-press-480x320.jpg",
+        "age": "20-25",
+        "name": "Chest Press"
     },
     {
         "id": "6336ef2e33349ccec5648c5c",
-        "time": "$3,470.24",
-        "img": "https://media.istockphoto.com/photos/sport-fitness-lifestyle-and-people-concept-muscular-bodybuilder-guy-picture-id611995652?k=20&m=611995652&s=612x612&w=0&h=apmnanwD72oIBupbjoApsiJ6mHOkPwgWzbdGouV6TUs=",
-        "age": 23,
-        "name": "Marva Morse"
+        "time": 15,
+        "img": "https://d3h9ln6psucegz.cloudfront.net/wp-content/uploads/2019/08/Group-Box-Jumps.jpg",
+        "age": "35-40",
+        "name": "Box Jumps"
     },
     {
         "id": "6336ef2e2454aac7931aff22",
-        "time": "$3,743.69",
-        "img": "https://media.istockphoto.com/photos/young-man-doing-workouts-on-a-back-with-power-exercise-machine-in-a-picture-id1147552251?k=20&m=1147552251&s=612x612&w=0&h=B2YvAmtrc-QrrY9EG1CiF8moLsGroYoavrbQBjGpSgU=",
-        "age": 32,
-        "name": "Gilda Hess"
-    },
-    {
-        "id": "6336ef2e6ca433e378c04175",
-        "time": "$3,160.40",
-        "img": "https://media.istockphoto.com/photos/handsome-model-young-man-training-arms-in-gym-picture-id856618410?k=20&m=856618410&s=612x612&w=0&h=r3O4TosxjsrqADUPW9pBC9NAl3h60AY74ZdtGXjZAuk=",
-        "age": 22,
-        "name": "Sherry Coffey"
+        "time": 35,
+        "img": "https://evofitness.at/wp-content/uploads/2020/02/EVO-2020-PP-March-Banner_23-1200x675.jpg",
+        "age": "20-25",
+        "name": "Power Lunges"
     }
 ]
