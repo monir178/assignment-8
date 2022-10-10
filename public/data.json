@@ -4,41 +4,47 @@
         "time": 10,
         "img": "https://musclemagfitness.com/wp-content/uploads/everything-you-want-to-know-about-squats-1024x576.jpg",
         "age": "20-25",
-        "name": "Weighted Squats"
+        "name": "Weighted Squats",
+        "text": "This movement works your quads, glutes, and calves. Stand with your feet shoulder-width apart, dumbbells by your sides, palms facing each other."
     },
     {
         "id": "6336ef2e2ab350f05affb939",
         "time": 20,
         "img": "https://d3h9ln6psucegz.cloudfront.net/wp-content/uploads/2016/12/Lunges-Youre-Doing-Them-Wrong.jpg",
         "age": "25-30",
-        "name": "Weighted Lunges"
+        "name": "Weighted Lunges",
+        "text": "Dumbbell lunges are a weighted variation of forward lunges. Perform dumbbell lunges by holding a dumbbell in each hand as you take a big step."
     },
     {
         "id": "6336ef2ede1e9a04246fb7b1",
         "time": 40,
         "img": "https://fitnessvolt.com/wp-content/uploads/2021/08/Renegade-Rows-Guide-750x422.jpg",
         "age": "25-30",
-        "name": "Renegade Rows"
+        "name": "Renegade Rows",
+        "text": "he renegade row is an advanced row variation characterized by holding your body in a plank position with one hand while lifting a dumbbell."
     },
     {
         "id": "6336ef2e40d2069878d1be0b",
         "time": 30,
         "img": "https://www.dmarge.com/wp-content/uploads/2022/01/how-to-bench-press-480x320.jpg",
         "age": "20-25",
-        "name": "Chest Press"
+        "name": "Chest Press",
+        "text": "The chest press is a classic upper-body strengthening exercise that works your pectorals (chest), deltoids (shoulders), and triceps (arms)."
     },
     {
         "id": "6336ef2e33349ccec5648c5c",
         "time": 15,
         "img": "https://d3h9ln6psucegz.cloudfront.net/wp-content/uploads/2019/08/Group-Box-Jumps.jpg",
         "age": "35-40",
-        "name": "Box Jumps"
+        "name": "Box Jumps",
+        "text": "Box jumps are a quintessential plyometric move where you jump from the floor up onto an elevated surface, like a box."
     },
     {
         "id": "6336ef2e2454aac7931aff22",
         "time": 35,
         "img": "https://evofitness.at/wp-content/uploads/2020/02/EVO-2020-PP-March-Banner_23-1200x675.jpg",
         "age": "20-25",
-        "name": "Power Lunges"
+        "name": "Power Lunges",
+        "text": "Coaching Points. Stand with feet shoulder width apart. Lunge back with left leg so top of front leg is parallel to ground."
     }
 ]
