@@ -15,6 +15,11 @@ const Workouts = () => {
             .then(res => res.json())
             .then(data => setWorkouts(data))
     }, [])
+
+    const handleAddToMyDetails = (workout) => {
+        console.log(workout)
+    }
+
     return (
 
         <div className='container mx-auto grid grid-cols-6 gap-5'>
@@ -29,6 +34,7 @@ const Workouts = () => {
                             workouts.map(workout => <Workout
                                 key={workout.id}
                                 workout={workout}
+                                handleAddToMyDetails={handleAddToMyDetails}
                             ></Workout>)
                         }
                     </div>

@@ -2,6 +2,7 @@ import React from 'react';
 
 const Workout = (props) => {
     const { name, img, time, age, text } = props.workout;
+    // console.log(props);
     return (
         <div className="w-full rounded-xl shadow-lg lg:max-w-sm p-4 bg-white">
             <img
@@ -19,7 +20,7 @@ const Workout = (props) => {
                 <p className='mb-2'>For age: <span className='font-semibold'>{age}</span></p>
 
                 <p className='mb-4'>Time Required: <span className='font-semibold'>{time}s</span></p>
-                <button className="px-4 w-full py-2 text-sm font-semibold text-white bg-indigo-500 rounded-lg shadow">
+                <button onClick={() => props.handleAddToMyDetails(props.workout)} className="px-4 w-full py-2 text-sm font-semibold text-white bg-indigo-500 rounded-lg shadow">
                     Add to List
                 </button>
             </div>

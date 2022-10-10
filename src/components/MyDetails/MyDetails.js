@@ -25,10 +25,10 @@ const MyDetails = () => {
             <h2 className='text-xl font-bold'>Add A Brake</h2>
 
             <div className="flex justify-around my-7 bg-slate-100 rounded-lg py-5 text-xl font-bold">
-                <button className='bg-white rounded-full p-2'>10s</button>
-                <button className='bg-white rounded-full p-2'>20s</button>
-                <button className='bg-white rounded-full p-2'>30s</button>
-                <button className='bg-white rounded-full p-2'>40s</button>
+                <button className='bg-white rounded-full p-2'><span>10</span>s</button>
+                <button className='bg-white rounded-full p-2'><span>20</span>s</button>
+                <button className='bg-white rounded-full p-2'><span>30</span>s</button>
+                <button className='bg-white rounded-full p-2'><span>40</span>s</button>
             </div>
             <h2 className='text-2xl font-semibold'>Exercise Details</h2>
             <div className="flex justify-around my-7 bg-slate-100 rounded-lg my-7 py-5 text-xl font-bold">
