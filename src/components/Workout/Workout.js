@@ -14,7 +14,7 @@ const Workout = (props) => {
                     {name}
                 </h4>
                 <p className="mb-2 text-gray-600">
-                    text: {text}
+                    {text}
                 </p>
                 <p className='mb-2'>For age: <span className='font-semibold'>{age}</span></p>
 
