@@ -9,6 +9,8 @@ import MyDetails from '../MyDetails/MyDetails';
 
 const Workouts = () => {
     const [workouts, setWorkouts] = useState([]);
+    const [time, setTime] = useState([]);
+    // console.log(typeof time);
 
     useEffect(() => {
         fetch('data.json')
@@ -17,7 +19,12 @@ const Workouts = () => {
     }, [])
 
     const handleAddToMyDetails = (workout) => {
-        console.log(workout)
+        console.log(workout);
+
+
+
+
+
     }
 
     return (
@@ -40,8 +47,8 @@ const Workouts = () => {
                     </div>
                 </div>
             </div>
-            <div className='px-4 col-span-2 bg-white'>
-                <MyDetails></MyDetails>
+            <div className='details-container px-4 col-span-2 bg-white'>
+                <MyDetails time={time}></MyDetails>
             </div>
         </div>
 

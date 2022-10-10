@@ -1,6 +1,7 @@
 import React from 'react';
 
-const MyDetails = () => {
+const MyDetails = ({ time }) => {
+
     return (
         <div className='pt-8'>
             <div className="flex items-center space-x-4">
@@ -33,7 +34,7 @@ const MyDetails = () => {
             <h2 className='text-2xl font-semibold'>Exercise Details</h2>
             <div className="flex justify-around my-7 bg-slate-100 rounded-lg my-7 py-5 text-xl font-bold">
                 <span className='text-lg font-bold'>Exercise Time:</span>
-                <p className='text-gray-400 font-semibold'><span>0</span>seconds</p>
+                <p className='text-gray-400 font-semibold'><span>{time}</span>seconds</p>
             </div>
             <div className="flex justify-around my-7 bg-slate-100 rounded-lg my-7 py-5 text-xl font-bold">
                 <span className='text-lg font-bold'>Break Time:</span>
