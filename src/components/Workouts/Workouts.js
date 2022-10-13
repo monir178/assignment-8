@@ -6,7 +6,6 @@ import Workout from '../Workout/Workout';
 import MyDetails from '../MyDetails/MyDetails';
 
 
-
 const Workouts = () => {
     const [workouts, setWorkouts] = useState([]);
     const [time, setTime] = useState([]);
