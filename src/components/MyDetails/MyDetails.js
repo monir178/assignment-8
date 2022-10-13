@@ -1,11 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const MyDetails = ({ time }) => {
-    const [breakTime, setBreakTime] = useState(0);
+
+    //get from local storage
+    const getItemsFromLS = () => {
+        const keys = localStorage.getItem('break-time');
+        if (keys) {
+            return JSON.parse(localStorage.getItem('break-time'));
+        }
+        else {
+            return 0;
+        }
+    }
+    const [breakTime, setBreakTime] = useState(getItemsFromLS());
+
 
     const handleToBreakTime = (value) => {
         setBreakTime(value);
     }
+
+    // set to local storage
+    useEffect(() => {
+        localStorage.setItem('break-time', JSON.stringify(breakTime))
+    }, [breakTime]);
 
     return (
         <div className='pt-8'>

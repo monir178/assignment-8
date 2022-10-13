@@ -8,6 +8,7 @@ import MyDetails from '../MyDetails/MyDetails';
 
 const Workouts = () => {
     const [workouts, setWorkouts] = useState([]);
+
     const [time, setTime] = useState(0);
     // console.log(typeof time);
 
@@ -17,16 +18,13 @@ const Workouts = () => {
             .then(data => setWorkouts(data))
     }, []);
 
+
     const handleAddToMyDetails = (workout) => {
         // console.log(workout);
         const newTime = time + workout.time;
         setTime(newTime);
-
-
-
-
-
     }
+
 
     return (
 
