@@ -8,17 +8,19 @@ import MyDetails from '../MyDetails/MyDetails';
 
 const Workouts = () => {
     const [workouts, setWorkouts] = useState([]);
-    const [time, setTime] = useState([]);
+    const [time, setTime] = useState(0);
     // console.log(typeof time);
 
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setWorkouts(data))
-    }, [])
+    }, []);
 
     const handleAddToMyDetails = (workout) => {
-        console.log(workout);
+        // console.log(workout);
+        const newTime = time + workout.time;
+        setTime(newTime);
 
 
 

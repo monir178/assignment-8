@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const MyDetails = ({ time }) => {
+    const [breakTime, setBreakTime] = useState(0);
+
+    const handleToBreakTime = (value) => {
+        setBreakTime(value);
+    }
 
     return (
         <div className='pt-8'>
@@ -11,7 +16,7 @@ const MyDetails = ({ time }) => {
                     <div className="text-sm text-gray-500 dark:text-gray-400">Joined in September, 2022</div>
                 </div>
             </div>
-            <div className="flex justify-around my-7 bg-slate-100 rounded-lg my-7 py-5 text-xl font-bold">
+            <div className="flex justify-around my-7 bg-slate-100 rounded-lg py-5 text-xl font-bold">
                 <div >
                     <h4>75<small className='text-gray-500 text-sm'>kg</small></h4><p>Weight</p>
                 </div>
@@ -26,19 +31,19 @@ const MyDetails = ({ time }) => {
             <h2 className='text-xl font-bold'>Add A Brake</h2>
 
             <div className="flex justify-around my-7 bg-slate-100 rounded-lg py-5 text-xl font-bold">
-                <button className='bg-white rounded-full p-2'><span>10</span>s</button>
-                <button className='bg-white rounded-full p-2'><span>20</span>s</button>
-                <button className='bg-white rounded-full p-2'><span>30</span>s</button>
-                <button className='bg-white rounded-full p-2'><span>40</span>s</button>
+                <button onClick={() => handleToBreakTime(10)} className='bg-white rounded-full p-2'><span>10</span>s</button>
+                <button onClick={() => handleToBreakTime(20)} className='bg-white rounded-full p-2'><span>20</span>s</button>
+                <button onClick={() => handleToBreakTime(30)} className='bg-white rounded-full p-2'><span>30</span>s</button>
+                <button onClick={() => handleToBreakTime(40)} className='bg-white rounded-full p-2'><span>40</span>s</button>
             </div>
             <h2 className='text-2xl font-semibold'>Exercise Details</h2>
-            <div className="flex justify-around my-7 bg-slate-100 rounded-lg my-7 py-5 text-xl font-bold">
+            <div className="flex justify-around my-7 bg-slate-100 rounded-lg  py-5 text-xl font-bold">
                 <span className='text-lg font-bold'>Exercise Time:</span>
-                <p className='text-gray-400 font-semibold'><span>{time}</span>seconds</p>
+                <p className='text-gray-400 font-semibold'><span>{time}</span> seconds</p>
             </div>
-            <div className="flex justify-around my-7 bg-slate-100 rounded-lg my-7 py-5 text-xl font-bold">
+            <div className="flex justify-around my-7 bg-slate-100 rounded-lg py-5 text-xl font-bold">
                 <span className='text-lg font-bold'>Break Time:</span>
-                <p className='text-gray-400 font-semibold'><span>0</span>seconds</p>
+                <p className='text-gray-400 font-semibold'><span>{breakTime}</span> seconds</p>
             </div>
 
             <button className='w-full px-4 py-4 rounded-lg text-2xl bg-indigo-500 text-white font-semibold'>
