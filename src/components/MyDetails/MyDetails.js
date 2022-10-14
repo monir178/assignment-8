@@ -1,4 +1,7 @@
+
 import React, { useEffect, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const MyDetails = ({ time }) => {
 
@@ -12,6 +15,12 @@ const MyDetails = ({ time }) => {
             return 0;
         }
     }
+
+    // Toast Function
+    const activityToast = () => {
+        toast("Exercise is labor without weariness.");
+    }
+
     const [breakTime, setBreakTime] = useState(getItemsFromLS());
 
 
@@ -23,6 +32,8 @@ const MyDetails = ({ time }) => {
     useEffect(() => {
         localStorage.setItem('break-time', JSON.stringify(breakTime))
     }, [breakTime]);
+
+
 
     return (
         <div className='pt-8'>
@@ -63,9 +74,10 @@ const MyDetails = ({ time }) => {
                 <p className='text-gray-400 font-semibold'><span>{breakTime}</span> seconds</p>
             </div>
 
-            <button className='w-full px-4 py-4 rounded-lg text-2xl bg-indigo-500 text-white font-semibold'>
+            <button onClick={activityToast} className='w-full px-4 py-4 rounded-lg text-2xl bg-indigo-500 text-white font-semibold'>
                 Activity Completed
             </button>
+            <ToastContainer />
         </div>
     );
 };
