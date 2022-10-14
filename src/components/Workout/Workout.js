@@ -2,7 +2,7 @@ import React from 'react';
 
 const Workout = ({ workout, handleAddToMyDetails }) => {
     const { name, img, time, age, text } = workout;
-    // console.log(props);
+
     return (
         <div className="w-full rounded-xl shadow-lg lg:max-w-sm p-4 bg-white">
             <img

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './Workout.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import Workout from '../Workout/Workout';
@@ -8,11 +7,13 @@ import MyDetails from '../MyDetails/MyDetails';
 
 
 const Workouts = () => {
+    //state for all cards to load
     const [workouts, setWorkouts] = useState([]);
 
+    //state for getting time and calculate total
     const [time, setTime] = useState(0);
-    // console.log(typeof time);
 
+    //here data loaded from data.json
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -20,15 +21,14 @@ const Workouts = () => {
     }, []);
 
 
+    //total workout time calculation
     const handleAddToMyDetails = (workout) => {
-        // console.log(workout);
         const newTime = time + workout.time;
         setTime(newTime);
     }
 
 
     return (
-
         <div className='container mx-auto grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-1 gap-5'>
 
             <div className='px-5 col-span-4 mt-20'>
@@ -47,8 +47,7 @@ const Workouts = () => {
                     </div>
                 </div>
             </div>
-            <div className='sticky top-0 px-4 ml-8 mr-0  md:ml-8 lg:ml-0   col-span-2 bg-white rounded-xl'>
-
+            <div className='details-container px-4 ml-8 md:ml-8 lg:ml-0 col-span-2 bg-white rounded-xl'>
                 <MyDetails time={time}></MyDetails>
             </div>
         </div>
